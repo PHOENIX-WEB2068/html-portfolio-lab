@@ -1,10 +1,10 @@
 <html>
     <head>
-<h1>FORM</h1>
+<h1>FORM IN HTML</h1>
     </head>
 
     <body>
-          <section>
+ <section>
   <h2>Student Information Form</h2>
   <p>
     Please fill in your details below. This form is made for practice only,
@@ -12,115 +12,137 @@
   </p>
 
   <form action="#" method="post">
+    <table border="1" cellpadding="8" cellspacing="0">
 
-    <h3>Personal Details</h3>
+      <tr>
+        <th colspan="2">Personal Details</th>
+      </tr>
 
-    <p>
-      <label for="fullname">Full Name:</label><br>
-      <input type="text" id="fullname" name="fullname" placeholder="Aaditya Chaulagain" required>
-    </p>
+      <tr>
+        <td><label for="fullname">Full Name:</label></td>
+        <td><input type="text" id="fullname" name="fullname" placeholder="Aaditya Chaulagain" size="30" required></td>
+      </tr>
 
-    <p>
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" placeholder="aaditya@example.com" required>
-    </p>
+      <tr>
+        <td><label for="email">Email Address:</label></td>
+        <td><input type="email" id="email" name="email" placeholder="aaditya@example.com" size="30" required></td>
+      </tr>
 
-    <p>
-      <label for="phone">Phone Number:</label><br>
-      <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX">
-    </p>
+      <tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX" size="30"></td>
+      </tr>
 
-    <p>
-      <label for="dob">Date of Birth:</label><br>
-      <input type="date" id="dob" name="dob">
-    </p>
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+      </tr>
 
-    <h3>Academic Details</h3>
+      <tr>
+        <th colspan="2">Academic Details</th>
+      </tr>
 
-    <p>
-      <label for="class">Class:</label><br>
-      <select id="class" name="class">
-        <option value="">-- Select your class --</option>
-        <option value="9">Class 9</option>
-        <option value="10">Class 10</option>
-        <option value="11" selected>Class 11</option>
-        <option value="12">Class 12</option>
-      </select>
-    </p>
+      <tr>
+        <td><label for="class">Class:</label></td>
+        <td>
+          <select id="class" name="class">
+            <option value="">-- Select your class --</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+            <option value="11" selected>Class 11</option>
+            <option value="12">Class 12</option>
+          </select>
+        </td>
+      </tr>
 
-    <p>
-      <label for="rollno">Roll Number:</label><br>
-      <input type="number" id="rollno" name="rollno" min="1" max="200" placeholder="24">
-    </p>
+      <tr>
+        <td><label for="rollno">Roll Number:</label></td>
+        <td><input type="number" id="rollno" name="rollno" min="1" max="200" placeholder="24"></td>
+      </tr>
 
-    <p>
-      Section:<br>
-      <input type="radio" id="secA" name="section" value="A" checked>
-      <label for="secA">A</label>
+      <tr>
+        <td>Section:</td>
+        <td>
+          <input type="radio" id="secA" name="section" value="A" checked>
+          <label for="secA">A</label>
 
-      <input type="radio" id="secB" name="section" value="B">
-      <label for="secB">B</label>
+          <input type="radio" id="secB" name="section" value="B">
+          <label for="secB">B</label>
 
-      <input type="radio" id="secC" name="section" value="C">
-      <label for="secC">C</label>
-    </p>
+          <input type="radio" id="secC" name="section" value="C">
+          <label for="secC">C</label>
+        </td>
+      </tr>
 
-    <p>
-      <label for="faculty">Faculty:</label><br>
-      <select id="faculty" name="faculty">
-        <option value="science">Science</option>
-        <option value="management">Management</option>
-        <option value="humanities">Humanities</option>
-      </select>
-    </p>
+      <tr>
+        <td><label for="faculty">Faculty:</label></td>
+        <td>
+          <select id="faculty" name="faculty">
+            <option value="science">Science</option>
+            <option value="management">Management</option>
+            <option value="humanities">Humanities</option>
+          </select>
+        </td>
+      </tr>
 
-    <h3>Other Details</h3>
+      <tr>
+        <th colspan="2">Other Details</th>
+      </tr>
 
-    <p>
-      Gender:<br>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
 
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
 
-      <input type="radio" id="other" name="gender" value="other">
-      <label for="other">Prefer not to say</label>
-    </p>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Prefer not to say</label>
+        </td>
+      </tr>
 
-    <p>
-      Hobbies (you may choose more than one):<br>
-      <input type="checkbox" id="reading" name="hobby" value="reading">
-      <label for="reading">Reading</label><br>
+      <tr>
+        <td>Hobbies:</td>
+        <td>
+          <input type="checkbox" id="reading" name="hobby" value="reading">
+          <label for="reading">Reading</label><br>
 
-      <input type="checkbox" id="biking" name="hobby" value="biking">
-      <label for="biking">Biking</label><br>
+          <input type="checkbox" id="biking" name="hobby" value="biking">
+          <label for="biking">Biking</label><br>
 
-      <input type="checkbox" id="hiking" name="hobby" value="hiking">
-      <label for="hiking">Hiking</label><br>
+          <input type="checkbox" id="hiking" name="hobby" value="hiking">
+          <label for="hiking">Hiking</label><br>
 
-      <input type="checkbox" id="cricket" name="hobby" value="cricket">
-      <label for="cricket">Playing Cricket</label><br>
+          <input type="checkbox" id="cricket" name="hobby" value="cricket">
+          <label for="cricket">Playing Cricket</label><br>
 
-      <input type="checkbox" id="coding" name="hobby" value="coding">
-      <label for="coding">Coding</label>
-    </p>
+          <input type="checkbox" id="coding" name="hobby" value="coding">
+          <label for="coding">Coding</label>
+        </td>
+      </tr>
 
-    <p>
-      <label for="about">Tell us something about yourself:</label><br>
-      <textarea id="about" name="about" rows="4" cols="40" placeholder="Write a few lines here..."></textarea>
-    </p>
+      <tr>
+        <td><label for="about">About Yourself:</label></td>
+        <td><textarea id="about" name="about" rows="4" cols="30" placeholder="Write a few lines here..."></textarea></td>
+      </tr>
 
-    <p>
-      <input type="checkbox" id="agree" name="agree" value="yes" required>
-      <label for="agree">I confirm that the details given above are correct.</label>
-    </p>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="agree" name="agree" value="yes" required>
+          <label for="agree">I confirm that the details given above are correct.</label>
+        </td>
+      </tr>
 
-    <p>
-      <input type="submit" value="Submit Form">
-      <input type="reset" value="Clear Form">
-    </p>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit Form">
+          <input type="reset" value="Clear Form">
+        </td>
+      </tr>
 
+    </table>
   </form>
 </section>
         
