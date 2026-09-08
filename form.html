@@ -1,89 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login</title>
-</head>
+<html>
+    <head>
+<h1>FORM</h1>
+    </head>
 
-<body bgcolor="#f0f2f5">
+    <body>
+          <section>
+  <h2>Student Information Form</h2>
+  <p>
+    Please fill in your details below. This form is made for practice only,
+    so no information is actually sent anywhere.
+  </p>
 
-    <center>
+  <form action="#" method="post">
 
-        <br><br><br>
+    <h3>Personal Details</h3>
 
-        <font color="#1877f2" size="7" face="Arial">
-            <b>facebook</b>
-        </font>
+    <p>
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="Aaditya Chaulagain" required>
+    </p>
 
-        <br><br>
+    <p>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="aaditya@example.com" required>
+    </p>
 
-        <table bgcolor="white" cellpadding="25" cellspacing="5" border="0">
-            <tr>
-                <td>
+    <p>
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX">
+    </p>
 
-                    <center>
+    <p>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob">
+    </p>
 
-                        <font face="Arial" size="5">
-                            <b>Log in to Facebook</b>
-                        </font>
+    <h3>Academic Details</h3>
 
-                        <br><br>
+    <p>
+      <label for="class">Class:</label><br>
+      <select id="class" name="class">
+        <option value="">-- Select your class --</option>
+        <option value="9">Class 9</option>
+        <option value="10">Class 10</option>
+        <option value="11" selected>Class 11</option>
+        <option value="12">Class 12</option>
+      </select>
+    </p>
 
-                        <form action="#" method="POST">
+    <p>
+      <label for="rollno">Roll Number:</label><br>
+      <input type="number" id="rollno" name="rollno" min="1" max="200" placeholder="24">
+    </p>
 
-                            <input type="text"
-                                   name="email"
-                                   placeholder="Email or phone number"
-                                   size="45"
-                                   required>
+    <p>
+      Section:<br>
+      <input type="radio" id="secA" name="section" value="A" checked>
+      <label for="secA">A</label>
 
-                            <br><br>
+      <input type="radio" id="secB" name="section" value="B">
+      <label for="secB">B</label>
 
-                            <input type="password"
-                                   name="password"
-                                   placeholder="Password"
-                                   size="45"
-                                   required>
+      <input type="radio" id="secC" name="section" value="C">
+      <label for="secC">C</label>
+    </p>
 
-                            <br><br>
+    <p>
+      <label for="faculty">Faculty:</label><br>
+      <select id="faculty" name="faculty">
+        <option value="science">Science</option>
+        <option value="management">Management</option>
+        <option value="humanities">Humanities</option>
+      </select>
+    </p>
 
-                            <input type="submit"
-                                   value="Log In"
-                                   style="font-size:20px;">
+    <h3>Other Details</h3>
 
-                        </form>
+    <p>
+      Gender:<br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
 
-                        <br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
 
-                        <font color="#1877f2" size="3" face="Arial">
-                            <b>Forgotten password?</b>
-                        </font>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Prefer not to say</label>
+    </p>
 
-                        <br><br>
+    <p>
+      Hobbies (you may choose more than one):<br>
+      <input type="checkbox" id="reading" name="hobby" value="reading">
+      <label for="reading">Reading</label><br>
 
-                        ----------------------------
+      <input type="checkbox" id="biking" name="hobby" value="biking">
+      <label for="biking">Biking</label><br>
 
-                        <br><br>
+      <input type="checkbox" id="hiking" name="hobby" value="hiking">
+      <label for="hiking">Hiking</label><br>
 
-                        <input type="button"
-                               value="Create New Account"
-                               style="font-size:18px;">
+      <input type="checkbox" id="cricket" name="hobby" value="cricket">
+      <label for="cricket">Playing Cricket</label><br>
 
-                    </center>
+      <input type="checkbox" id="coding" name="hobby" value="coding">
+      <label for="coding">Coding</label>
+    </p>
 
-                </td>
-            </tr>
-        </table>
+    <p>
+      <label for="about">Tell us something about yourself:</label><br>
+      <textarea id="about" name="about" rows="4" cols="40" placeholder="Write a few lines here..."></textarea>
+    </p>
 
-        <br>
+    <p>
+      <input type="checkbox" id="agree" name="agree" value="yes" required>
+      <label for="agree">I confirm that the details given above are correct.</label>
+    </p>
 
-        <font face="Arial" size="3">
-            <b>Facebook</b> helps you connect and share with the people in your life.
-        </font>
+    <p>
+      <input type="submit" value="Submit Form">
+      <input type="reset" value="Clear Form">
+    </p>
 
-    </center>
-
-</body>
+  </form>
+</section>
+        
+    </body>
 </html>
-```
+
+
+
